@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Cirlce Calculations</title>
+    <meta name="Description" content="Cirlce Calc">
+    <meta name="Author" content="Daniel Condit">
+
+    <link rel="stylesheet" href="Styles/style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.js"></script>
+
+</head>
+
+<body>
+
+    <form id="circleForm" onsubmit="return false">
+        <div>
+            <h2>Circle Calculations</h2>
+            <label for="radius" class="formLabel">Enter radius of a circle:</label>
+            <input type="text" id="radius" name="radius">
+            <label for="radius" class="error" id="radiuserror"></label>
+            <br>
+            <label for="diameter" class="formLabel">Diameter:</label><span id="diameter"></span><br>
+            <label for="circumference" class="formLabel">Circumference:</label><span id="circumference"></span><br>
+            <label for="area" class="formLabel">Area:</label><span id="area"></span><br>
+            <br>
+            <br>
+            <input type="submit" value="Calculate" id="btnSubmit" onclick="displayCalculations()">
+            <input type="submit" value="Clear" id="btnSubmit" formonvalidate>
+        </div>
+    </form>
+
+</body>
+
+<script src="Scripts/validation.js"></script>
+<script src="Scripts/calc.js"></script>
+
+</html>

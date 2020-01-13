@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Positioning Lab</title>
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body {
+			background-color: #ECECEC;
+			font-weight: bold;
+			font-family: Tahoma, Geneva, sans-serif;
+			color: #FFF;
+			text-align: center;
+			line-height: 24px;
+		}
+
+		#wrapper {
+			position: relative;
+			background-color: #FFF;
+			border-top-width: 1px;
+			border-right-width: 1px;
+			border-bottom-width: 1px;
+			border-left-width: 1px;
+			border-top-style: solid;
+			border-right-style: solid;
+			border-bottom-style: solid;
+			border-left-style: solid;
+			width: 50vw;
+			height: 50vh;
+			margin: 0 auto 5% auto;
+		}
+
+		.boxes {
+			position: absolute;
+			width: 15%;
+			height: 20%;
+		}
+
+		#red,
+		#green {
+			top: 0px;
+		}
+
+		#blue,
+		#purple {
+			bottom: 0px;
+		}
+
+		#red,
+		#blue {
+			left: 0px;
+		}
+
+		#green,
+		#purple {
+			right: 0px;
+		}
+
+		#red {
+			background-color: #900;
+		}
+
+		#green {
+			background-color: #090;
+		}
+
+		#blue {
+			background-color: #00F;
+		}
+
+		#purple {
+			background-color: #63C;
+		}
+
+		#footer {
+			background-color: #666;
+			width: 15%;
+			height: 20%;
+			margin: auto;
+			position: relative;
+			top: 40%;
+		}
+
+		h1 {
+			color: #000;
+			font-weight: normal;
+			padding: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Absolute 2</h1>
+	<div id="wrapper">
+		<div id="red" class="boxes">R</div>
+		<div id="green" class="boxes">G</div>
+		<div id="blue" class="boxes">B</div>
+		<div id="purple" class="boxes">P</div>
+		<div id="footer">F</div>
+	</div>
+</body>
+
+</html>

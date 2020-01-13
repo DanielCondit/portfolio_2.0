@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Survey Form</title>
+  <meta name="Description" content="Survey Form Exercise">
+  <meta name="Author" content="Daniel Condit">
+
+  <link rel="stylesheet" href="assets/styles/styles.css">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.js"></script>
+  <!--<script src="assets/scripts/validation.js"></script>-->
+  <script src="assets/scripts/survey.js"></script>
+
+</head>
+
+<body id="body">
+
+  <h1>Survey Form</h1>
+
+  <h2>Please fill out the survey below:</h2>
+
+  <div class="formWrapper">
+    <form id="surveyForm" onsubmit="return false">
+
+      <div class="inputWrappers">
+        <label class="formLabels" for="name">Name:</label>
+        <input type="text" name="name" id="name" size="40" maxlength="40">
+      </div>
+      <br>
+      <div class="inputWrappers">
+        <label class="formLabels" for="age">Age:</label>
+        <input name="age" id="age" size="30" maxlength="6">
+      </div>
+      <br>
+      <div class="inputWrappers">
+        <label class="formLabels" for="email">Email:</label>
+        <input type="email" id="email" name="email" size="40" maxlength="40">
+      </div>
+      <br>
+      <div class="inputWrappers">
+        <label class="formLabels" for="date">Date Visited:</label>
+        <input type="date" name="date" id="date">
+      </div>
+      <br>
+      <div class="inputWrappers">
+        <label class="formLabels">Service:</label>
+        <label class="radioLabels" for="dineIn"><input type="radio" name="service" id="dineIn" value="D">Dine In</label>
+        <label class="radioLabels" for="takeOut"><input type="radio" name="service" id="takeOut" value="T">Take Out</label>
+        <label for="service" class="error"></label>
+      </div>
+      <br>
+      <div class="inputWrappers">
+        <label class="formLabels">Food Quality:</label>
+        <label class="radioLabels" for="excellentFood"><input type="radio" name="foodQuality" id="excellentFood" value="4">Excellent</label>
+        <label class="radioLabels" for="goodFood"><input type="radio" name="foodQuality" id="goodFood" value="3">Good</label>
+        <label class="radioLabels" for="avgFood"><input type="radio" name="foodQuality" id="avgFood" value="2">Average</label>
+        <label class="radioLabels" for="badFood"><input type="radio" name="foodQuality" id="badFood" value="1">Dissatisfied</label>
+        <label for="foodQuality" class="error"></label>
+      </div>
+      <br>
+      <div class="inputWrappers">
+        <label class="formLabels">Service Quality:</label>
+        <label class="radioLabels" for="excellentService"><input type="radio" name="serviceQuality" id="excellentService" value="4">Excellent</label>
+        <label class="radioLabels" for="goodService"><input type="radio" name="serviceQuality" id="goodService" value="3">Good</label>
+        <label class="radioLabels" for="avgService"><input type="radio" name="serviceQuality" id="avgService" value="2">Average</label>
+        <label class="radioLabels" for="badService"><input type="radio" name="serviceQuality" id="badService" value="1">Dissatisfied</label>
+        <label for="serviceQuality" class="error"></label>
+      </div>
+      <br>
+      <div class="inputWrappers">
+        <label class="formLabels">Order Accuracy:</label>
+        <label class="radioLabels" for="excellentOrder"><input type="radio" name="orderQuality" id="excellentOrder" value="4">Excellent</label>
+        <label class="radioLabels" for="goodOrder"><input type="radio" name="orderQuality" id="goodOrder" value="3">Good</label>
+        <label class="radioLabels" for="avgOrder"><input type="radio" name="orderQuality" id="avgOrder" value="2">Average</label>
+        <label class="radioLabels" for="badOrder"><input type="radio" name="orderQuality" id="badOrder" value="1">Dissatisfied</label>
+        <label for="orderQuality" class="error"></label>
+      </div>
+      <br>
+      <div class="inputWrappers">
+        <label class="formLabels">Speed of Service:</label>
+        <label class="radioLabels" for="excellentSpeed"><input type="radio" name="speedQuality" id="excellentSpeed" value="4">Excellent</label>
+        <label class="radioLabels" for="goodSpeed"><input type="radio" name="speedQuality" id="goodSpeed" value="3">Good</label>
+        <label class="radioLabels" for="avgSpeed"><input type="radio" name="speedQuality" id="avgSpeed" value="2">Average</label>
+        <label class="radioLabels" for="badSpeed"><input type="radio" name="speedQuality" id="badSpeed" value="1">Dissatisfied</label>
+        <label for="speedQuality" class="error"></label>
+      </div>
+      <br>
+      <div class="inputWrappers">
+        <label class="formLabels">Value:</label>
+        <label class="radioLabels" for="excellentValue"><input type="radio" name="valueQuality" id="excellentValue" value="4">Excellent</label>
+        <label class="radioLabels" for="goodValue"><input type="radio" name="valueQuality" id="goodValue" value="3">Good</label>
+        <label class="radioLabels" for="avgValue"><input type="radio" name="valueQuality" id="avgValue" value="2">Average</label>
+        <label class="radioLabels" for="badValue"><input type="radio" name="valueQuality" id="badValue" value="1">Dissatisfied</label>
+        <label for="valueQuality" class="error"></label>
+      </div>
+      <br>
+      <div class="inputWrappers">
+        <label class="formLabels">Overall Experience:</label>
+        <label class="radioLabels" for="excellentOverall"><input type="radio" name="overallQuality" id="excellentOverall" value="4">Excellent</label>
+        <label class="radioLabels" for="goodOverall"><input type="radio" name="overallQuality" id="goodOverall" value="3">Good</label>
+        <label class="radioLabels" for="avgOverall"><input type="radio" name="overallQuality" id="avgOverall" value="2">Average</label>
+        <label class="radioLabels" for="badOverall"><input type="radio" name="overallQuality" id="badOverall" value="1">Dissatisfied</label>
+        <label for="overallQuality" class="error"></label>
+      </div>
+      <br>
+      <div class="inputWrappers">
+        <textarea name="myComments" id="myComments" cols="30" rows="10" placeholder="Please let us know your comments here."></textarea>
+      </div>
+      <br>
+      <div class="inputWrappers">
+        <input id="submitButton" type="submit" name="submitButton" value="Submit Survey Form" onclick="CreateSurvey()">
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.faqTitles:hover {
+    cursor: grab;
+    text-decoration: underline;
+}
+
+.faqTitles:active {
+    cursor: grabbing;
+}
+
+.faqTitles {
+    font-family: 'Space Mono', monospace;
+    font-weight: bolder;
+    font-size: 1.17em;
+    color: #005288;
+}
+
+i {
+    color: #005288;
+}
+
+.active i {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.faqInfo {
+    display: none;
+}
+
+.faqSlide:not(:last-child) {
+    margin-bottom: 25px;
+}

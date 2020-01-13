@@ -1,0 +1,165 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Patient Form</title>
+  <meta name="Description" content="Patient Form Exercise">
+  <meta name="Author" content="Daniel Condit">
+
+  <link rel="stylesheet" href="assets/styles/styles.css">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.js"></script>
+  <script src="assets/scripts/validation.js"></script>
+  <script src="assets/scripts/patient.js"></script>
+
+</head>
+
+<body id="body">
+
+  <h1>New Patient Registration</h1>
+
+  <h2>Please fill out the form below:</h2>
+
+  <div class="formWrapper">
+    <form id="NewPatientRegistration" onsubmit="return false">
+      <div class="inputWrappers">
+        <label class="formLabels" for="fName">First Name:</label>
+        <input type="text" name="fName" id="fName" size="30" maxlength="30">
+      </div>
+      <div class="inputWrappers">
+        <label class="formLabels" for="mInitial">Middle Initial:</label>
+        <input name="mInitial" id="mInitial" size="30" maxlength="30">
+      </div>
+      <div class="inputWrappers">
+        <label class="formLabels" for="lName">Last Name:</label>
+        <input type="text" name="lName" id="lName" size="30" maxlength="30" data-rule-minlength="2" data-msg-minlength="">
+        <!--<label for="lName" class="error"></label>-->
+      </div>
+      <div class="inputWrappers">
+        <label class="formLabels" for="email">Email:</label>
+        <input type="email" id="email" name="email" size="30" maxlength="30">
+      </div>
+      <div class="inputWrappers">
+        <label class="formLabels">Sex:</label>
+        <label class="radioLabels" for="male"><input type="radio" name="sex" id="male" value="M">Male</label>
+        <label class="radioLabels" for="female"><input type="radio" name="sex" id="female" value="F">Female</label>
+        <label class="radioLabels" for="notApplicable"><input type="radio" name="sex" id="notApplicable" value="N">N/A</label>
+        <label for="sex" class="error"></label>
+      </div>
+      <div class="inputWrappers">
+        <label class="formLabels" for="dob">Birthday:</label>
+        <input type="date" name="dob" id="dob">
+      </div>
+      <div class="inputWrappers">
+        <label class="formLabels" for="height">Height (inches):</label>
+        <input type="text" name="height" id="height" size="3" maxlength="3">
+      </div>
+      <div class="inputWrappers">
+        <label class="formLabels" for="weight">Weight  (pounds):</label>
+        <input type="text" name="weight" id="weight" size="3" maxlength="3">
+      </div>
+      <hr>
+      <div class="inputWrappers">
+        <label class="formLabels" for="phoneNum">Phone Number:</label>
+        <input type="text" name="phoneNum" id="phoneNum" size="14" maxlength="14">
+      </div>
+      <div class="inputWrappers">
+        <label class="formLabels" for="maritalStat">Marital Status:</label>
+        <select name="maritalStat" id="maritalStat" data-rule-required="true" data-msg-required="">
+          <option value="">Select a Status...</option>
+          <option value="S">Single</option>
+          <option value="M">Married</option>
+          <option value="D">Divorced</option>
+          <option value="L">Legally Seperated</option>
+          <option value="W">Widowed</option>
+        </select>
+      </div>
+      <div class="inputWrappers">
+        <label class="formLabels" for="addr">Address:</label>
+        <input type="text" name="addr" id="addr" size="30" maxlength="30">
+      </div>
+      <div class="inputWrappers">
+        <label class="formLabels">City/State/Zip:</label>
+        <input type="text" name="city" id="city">
+        <select name="state" id="state">
+          <option value="">Select State</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">District Of Columbia</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+        </select>
+        <input type="text" pattern="\d*" name="zip" id="zip" size="5" maxlength="5">
+      </div>
+      <hr>
+      <div class="inputWrappers">
+        <label class="formLabels">Taking Medications:</label>
+        <label class="radioLabels" for="yes"><input type="radio" name="takingMed" id="yes" value="Y">Yes:</label>
+        <label class="radioLabels" for="no"><input type="radio" name="takingMed" id="no" value="N">No:</label>
+        <label for="takingMed" class="error errorRadio errorMed"></label>
+      </div>
+      <div class="inputWrappers">
+        <textarea name="medList" id="medList" cols="30" rows="10" placeholder="If yes, list medications here."></textarea>
+      </div>
+      <hr>
+      <div class="inputWrappers">
+        <input id="submitButton" type="submit" name="submitButton" value="Submit Patient Form" onclick="CreatePatient()">
+      </div>
+    </form>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'News Cycle', sans-serif;
+}
+
+.clock {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#time {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 5em;
+  color: black;
+}
+
+#timer-bar {
+  height: 5px;
+  width: 100%;
+  margin: 0 auto;
+  transition: width 1s;
+}
+
+.ticker {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0px;
+  width: 50%;
+  text-align: center;
+}
+
+.ticker li {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.ticker li a {
+  text-decoration: none;
+  color: black;
+}
+
+.titleStyle {
+  display: block;
+  font-size: 1.50em;
+  font-weight: bolder;
+}
+
+.authorStyle {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.ticker li img {
+  display: block;
+  margin: 20px;
+  height: 357px;
+  width: 540px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  background-color: #EDEDED;
+  border: 1px solid #CCC;
+}

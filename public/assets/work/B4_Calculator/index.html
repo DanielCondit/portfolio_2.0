@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Simple Calculator</title>
+    <meta name="Description" content="Calculator">
+    <meta name="Author" content="Daniel Condit">
+
+    <link rel="stylesheet" href="Styles/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.js"></script>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="head_box">
+            <h1>Javascript Calculator</h1>
+        </div>
+        <div id="calc_body">
+            <H4>Calculator</H4>
+            <form id="calcForm" onsubmit="return false">
+                <label class="formFields formLabels" for="numOne">Operand 1:<input type="text" id="numOne" name="numOne" value=""></label>
+                <br>
+                <label class="formLabels">Operator:</label>
+                <label for="rdAdd"><input type="radio" class="radioSelect" id="rdAdd" name="rdMath" value="+">+</label>
+                <label for="rdSubtract"><input type="radio" class="radioSelect" id="rdSubtract" name="rdMath" value="-" />-</label>
+                <label for="rdMultiply"><input type="radio" class="radioSelect" id="rdMultiply" name="rdMath" value="*" />*</label>
+                <label for="rdDivide"><input type="radio" class="radioSelect" id="rdDivide" name="rdMath" value="/" />/</label>
+                <label for="rdMath" class="error"></label>
+                <br>
+                <label class="formFields formLabels" for="numTwo">Operand 2:<input type="text" id="numTwo" name="numTwo" value=""></label>
+                <br>
+                <h3 class="formFields formLabels">Results: <span id="calcValue"></span></h3>
+                <br>
+                <input id="calcButton" type="submit" value="Calculate" name="calcButton" onclick="calcNum()">
+                <input type="submit" value="Clear" name="clearButton" onclick="clearFields()">
+
+            </form>
+        </div>
+
+
+    </div>
+
+    <script src="Scripts/validation.js"></script>
+    <script src="Scripts/script.js"></script>
+
+</body>
+
+</html>

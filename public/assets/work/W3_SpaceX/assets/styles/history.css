@@ -1,0 +1,30 @@
+.history_wrap {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto !important;
+    text-align: center;
+}
+
+table th:not(:last-child) {
+    border-right: solid;
+    padding-right: 10px;
+}
+
+table td:not(:last-child) {
+    border-right: solid;
+    padding-right: 10px;
+}
+
+table th:not(:first-child) {
+    padding-left: 10px;
+}
+
+table td:not(:first-child) {
+    padding-left: 10px;
+}
+
+p {
+    font-weight: bold;
+}

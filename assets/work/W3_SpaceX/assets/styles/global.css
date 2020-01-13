@@ -1,0 +1,77 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    font-family: 'Space Mono', monospace;
+    color: #005288;
+}
+
+li {
+    text-align: justify;
+    font-weight: bold;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#nav_head {
+    height: auto;
+    border-bottom: solid;
+    border-bottom-color: #a7a9ac;
+    background-color: white;
+}
+
+#logo {
+    height: 7vh;
+}
+
+#nav_head #spacex {
+    text-decoration: none;
+}
+
+.nav_buttons a {
+    text-decoration: none;
+    margin: 0px 5px 0 5px;
+    font-weight: bolder;
+}
+
+.nav_buttons a:hover {
+    background-color: #a7a9ac;
+}
+
+h1 {
+    text-align: center;
+}
+
+.view_wrap {
+    width: 100%;
+    padding-bottom: 8vh;
+}
+
+.footer_div {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-top: solid;
+    border-color: #a7a9ac;
+    background-color: white;
+    bottom: 0;
+    padding: 0;
+}
+
+.footer_div a {
+    text-decoration: none;
+}
+
+.footer_div a:not(:last-child) {
+    margin: 25px;
+}
