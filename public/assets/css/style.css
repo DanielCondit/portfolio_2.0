@@ -215,7 +215,7 @@ body {
   text-decoration: underline;
 }
 
-.cover_letter, .about_me, .employment, .education, .skill_flex_sub, .writing_samples, .db_examples, .ex_flex_main {
+.cover_letter, .about_me, .employment, .education, .skill_flex_sub, .writing_samples, .db_examples {
   border: 2px solid black;
   border-radius: 25px;
   margin: 10px 0 10px 0;
