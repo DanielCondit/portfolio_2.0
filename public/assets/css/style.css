@@ -215,12 +215,12 @@ body {
   text-decoration: underline;
 }
 
-.cover_letter, .about_me, .employment, .education, .skill_flex_sub, .writing_samples, .db_examples, .ex_flex_main {
-  border: 2px solid black;
-  border-radius: 25px;
+.cover_letter, .about_me, .employment, .education, .skill_flex_sub, .writing_samples, .db_examples {
+  border-left: 2px solid black;
   margin: 10px 0 10px 0;
   padding: 10px;
 }
+
 
 .cover_letter:hover, .about_me:hover, .employment:hover, .education:hover, .skill_flex_sub:hover, .writing_samples:hover, .db_examples:hover {
   background-color: white;
